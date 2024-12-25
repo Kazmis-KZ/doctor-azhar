@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симагамбетова Ажар Куаншовна - Врач</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e3f2fd, #f5f5f5);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #42a5f5, #1e88e5);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        header h3 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+        .profile-info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .profile-info h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #1e88e5;
+        }
+
+        .profile-info h2 {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0 15px;
+        }
+
+        .profile-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .working-hours, .address {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: #4caf50;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #388e3c;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        section h2 {
+            font-size: 22px;
+            color: #1e88e5;
+            border-bottom: 2px solid #1e88e5;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        section p, section ul, section ol {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .certificate {
+            max-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .certificate:hover {
+            transform: scale(1.05);
+        }
+
+        .certificate img {
+            width: 100%;
+            display: block;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 15px 15px 0 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-info {
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin-bottom: 20px;
+            }
+
+            section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Симагамбетова Ажар Куаншовна</h1>
+        <h3>Направления: Гастроэнтеролог(взрослый,детский), Инфекционист(взрослый,детский), Гельминтолог, Паразитолог</h3>
+    </header>
+
+    <div class="container">
+        <div class="profile">
+            <img src="Azhar.jpeg" alt="Симагамбетова Ажар Куаншовна" class="profile-photo">
+            <div class="profile-info">
+                <h1>Симагамбетова Ажар Куаншовна</h1>
+                <h2>Гастроэнтеролог, Гельминтолог</h2>
+                <p><strong>Опыт работы:</strong> СНГ, Республика Корея, Республика Турция, ОАЭ</p>
+                <p><strong>Консультации:</strong> Консультации на дому, онлайн консультации</p>
+                <p><strong>Стаж работы:</strong> 27 лет</p>
+                <p><strong>Квалификация:</strong> Высшая квалификационная категория</p>
+                <p class="working-hours"><strong>График работы:</strong> Понедельник - Пятница, 09:00 - 18:00</p>
+                <p class="address"><strong>Адрес:</strong> Мкр. Восток 15, Клиника "SARA Med"</p>
+                <a href="https://wa.me/77021127575" class="btn">Записаться на консультацию</a>
+            </div>
+        </div>
+
+        <section>
+            <h2>Описание специализаций</h2>
+            <p><strong>Гастроэнтеролог</strong> — это врач, специализирующийся на диагностике и лечении заболеваний желудочно-кишечного тракта. Существуют два типа гастроэнтерологов:</p>
+<ol>
+    <li><strong>Взрослый гастроэнтеролог</strong> — занимается проблемами ЖКТ у людей старше 18 лет. Его область работы включает такие заболевания, как гастрит, язва желудка, болезни печени (например, цирроз), панкреатит, воспалительные заболевания кишечника и другие.</li>
+    <li><strong>Детский гастроэнтеролог</strong> — специализируется на лечении заболеваний ЖКТ у детей, включая новорожденных и подростков. Детские гастроэнтерологи могут заниматься такими проблемами, как колики у младенцев, хронические запоры, аллергии на пищу, болезни печени, а также заболевания, связанные с нарушениями обмена веществ.</li>
+</ol>
+<p>Если вам нужно выбрать врача, то важно учитывать возраст пациента: для взрослых нужен гастроэнтеролог, специализирующийся на взрослых, а для детей — врач с опытом работы с детьми.</p>
+
+            <h2>Гельминтолог</h2>
+<p><strong>Гельминтолог</strong> — это врач, специализирующийся на диагностике, лечении и профилактике заболеваний, вызванных гельминтами (паразитическими червями). Эти заболевания могут быть разнообразными и затрагивать различные органы человека, включая кишечник, печень, лёгкие и другие.</p>
+<p><strong>Основные области работы гельминтолога:</strong></p>
+<ol>
+    <li><strong>Диагностика заболеваний, вызванных гельминтами:</strong>
+        <ul>
+            <li>Гельминтолог назначает анализы (например, кал на яйца гельминтов, анализ крови, серологические исследования) для выявления паразитов.</li>
+            <li>Также могут использоваться методы визуализации (УЗИ, эндоскопия) для обнаружения паразитов в органах.</li>
+        </ul>
+    </li>
+    <li><strong>Лечение гельминтозов:</strong>
+        <ul>
+            <li>Гельминтолог разрабатывает схему лечения, которая может включать препараты для уничтожения паразитов (антигельминтные средства) и лечение осложнений, вызванных гельминтами.</li>
+        </ul>
+    </li>
+    <li><strong>Профилактика гельминтозов:</strong>
+        <ul>
+            <li>Врач обучает пациентов мерам профилактики, таким как соблюдение личной гигиены, правильное приготовление пищи, предотвращение контакта с источниками инфекции.</li>
+        </ul>
+    </li>
+</ol>
+<p><strong>Некоторые заболевания, лечением которых занимается гельминтолог:</strong></p>
+<ul>
+    <li>Аскаридоз (инфекция аскаридами)</li>
+    <li>Энтеробиоз (инфекция острицами)</li>
+    <li>Тениоз (инфекция свиным или бычьим цепнем)</li>
+    <li>Фасциолез (инфекция печёночным сосальщиком)</li>
+    <li>Трихинеллёз (инфекция трихинеллами)</li>
+    <li>Анкилостомоз (инфекция анкилостомами)</li>
+</ul>
+<p>Гельминтолог может работать как в стационарных медицинских учреждениях, так и в частных клиниках, а также заниматься научной деятельностью, изучая паразитарные заболевания.</p>
+<p>Если у вас есть подозрения на инфекцию гельминтами или вы хотите пройти обследование, обращение к гельминтологу будет правильным решением.</p>
+        </section>
+
+        <section>
+            <h2>Фотогалерея</h2>
+            <div class="certificates">
+                <div class="certificate">
+                    <img src="ill.jpeg" alt="Фото 1" onclick="showModal(this.src)">
+                </div>
+                <div class="certificate">
+                    <img src="ill2.jpeg" alt="Фото 2" onclick="showModal(this.src)">
+                </div>
+                <div class="certificate">
+                    <img src="ill3.jpeg" alt="Фото 3" onclick="showModal(this.src)">
+                </div>
+                <div class="certificate">
+                    <img src="ill4.jpeg" alt="Фото 4" onclick="showModal(this.src)">
+                </div>
+                <div class="certificate">
+                    <img src="ill5.jpeg" alt="Фото 5" onclick="showModal(this.src)">
+                </div>
+                <div class="certificate">
+                    <img src="ill6.jpeg" alt="Фото 6" onclick="showModal(this.src)">
+                </div>
+                <div class="certificate">
+                    <img src="ill7.jpeg" alt="Фото 7" onclick="showModal(this.src)">
+                </div>
+            
+        </section>
+
+        <section>
+            <h2>Оздоровительная программа &ldquo;Путь к здоровью&rdquo;</h2>
+            <p>Пациенты получают сертификаты после прохождения лечения, подтверждающие качество и результаты терапии:</p>
+            <div class="certificates">
+                <div class="certificate">
+                    <img src="сертефикат.jpeg" alt="Сертификат Клиника SARA Med" onclick="showModal(this.src)">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal" id="modal" onclick="hideModal()">
+        <img id="modal-img" src="" alt="Полный экран">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Симагамбетова Ажар Куаншовна. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function showModal(src) {
+            const modal = document.getElementById('modal');
+            const modalImg = document.getElementById('modal-img');
+            modalImg.src = src;
+            modal.classList.add('active');
+        }
+
+        function hideModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
